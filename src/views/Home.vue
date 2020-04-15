@@ -1,5 +1,12 @@
 <template>
   <div id="home">
+    <p>奈良高専吹奏楽部のホームページへようこそ!</p>
+
+    <p>
+      このホームページでは奈良高専吹奏楽部の演奏会情報やコンクール結果などを掲載しています。
+      なお、このホームページは奈良高専の公式Webサイトではありません。
+    </p>
+
     <F1 v-if="latest_concerts" v-bind:d="latest_concerts"></F1>
     <Timeline :id="user_id" source-type="profile" :options="{ tweetLimit: '3' }" />
   </div>

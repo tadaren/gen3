@@ -1,18 +1,23 @@
 <template>
   <div id="app">
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
-    <router-link to="/concerts">Concerts</router-link>
-    <router-link to="/concours">Concours</router-link>
+    <Header/>
 
     <router-view/>
+
+    <Footer/>
   </div>
 </template>
 
 <script>
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'App',
+  components: {
+    Header,
+    Footer,
+  }
 }
 </script>
 
