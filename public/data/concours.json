@@ -1,5 +1,5 @@
 {
-  "concurs": [
+  "concours": [
     {
       "year": 2020,
       "award": "金賞",
@@ -21,13 +21,6 @@
       "next": [],
       "aSetPiece": "課題曲1",
       "freeProgram": "自由曲A"
-    },
-    {
-      "year": 2020,
-      "award": "銅賞",
-      "isRepresent": false,
-      "next": [],
-      "musicTitle": "タイトルmusic_title"
     }
   ]
 }

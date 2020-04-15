@@ -1,7 +1,12 @@
 <template>
   <div id="concours">
     <div>
-      <F3 v-for="(concurs, index) in test3" :key=index v-bind:concurs="concurs"></F3>
+      <h2>吹奏楽コンクール実績</h2>
+      <F3 v-for="(c, index) in concours" :key=index v-bind:concurs="c"></F3>
+    </div>
+    <div>
+      <h2>アンサンブルコンテスト</h2>
+      <F3 v-for="(e, index) in ensemble" :key=index v-bind:concurs="e"></F3>
     </div>
   </div>
 </template>
@@ -16,13 +21,17 @@ export default {
   },
   data() {
     return {
-      test3: [],
+      concours: [],
+      ensemble: [],
     }
   },
   created() {
-    this.axios.get('/data/test3.json').then(res => {
-      this.test3 = res.data.concurs;
-    })
+    this.axios.get('/data/concours.json').then(res => {
+      this.concours = res.data.concours;
+    });
+    this.axios.get('/data/ensemble.json').then(res => {
+      this.ensemble = res.data.ensemble;
+    });
   }
 }
 </script>
