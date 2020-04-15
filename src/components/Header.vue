@@ -4,6 +4,7 @@
     <router-link to="/about">About</router-link>
     <router-link to="/concerts">Concerts</router-link>
     <router-link to="/concours">Concours</router-link>
+    <router-link to="/link">Link</router-link>
   </div>
 </template>
 
